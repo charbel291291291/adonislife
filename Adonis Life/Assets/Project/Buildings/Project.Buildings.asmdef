@@ -1,0 +1,17 @@
+{
+    "name": "Project.Buildings",
+    "rootNamespace": "Project.Buildings",
+    "references": [
+        "Project.Core",
+        "Project.Gameplay"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
