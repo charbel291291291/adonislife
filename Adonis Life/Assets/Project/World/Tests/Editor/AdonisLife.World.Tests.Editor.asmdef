@@ -5,7 +5,8 @@
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
         "AdonisLife.World",
-        "AdonisLife.World.Streaming"
+        "AdonisLife.World.Streaming",
+        "AdonisLife.Gameplay"
     ],
     "includePlatforms": [
         "Editor"

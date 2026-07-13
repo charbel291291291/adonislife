@@ -1,0 +1,16 @@
+{
+    "name": "AdonisLife.Gameplay",
+    "rootNamespace": "AdonisLife.Gameplay",
+    "references": [
+        "AdonisLife.World"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
