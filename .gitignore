@@ -14,3 +14,4 @@ Adonis Life/*.user
 Adonis Life/debug.log
 Game/
 create-project.log
+*.log
