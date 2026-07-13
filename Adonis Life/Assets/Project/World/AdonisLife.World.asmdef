@@ -1,7 +1,10 @@
 {
     "name": "AdonisLife.World",
     "rootNamespace": "AdonisLife.World",
-    "references": [],
+    "references": [
+        "Unity.Burst",
+        "Unity.Collections"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
