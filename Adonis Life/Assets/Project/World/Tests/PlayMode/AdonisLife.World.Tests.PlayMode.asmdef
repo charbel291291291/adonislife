@@ -1,0 +1,22 @@
+{
+    "name": "AdonisLife.World.Tests.PlayMode",
+    "rootNamespace": "AdonisLife.World.Tests.PlayMode",
+    "references": [
+        "UnityEngine.TestRunner",
+        "AdonisLife.World",
+        "AdonisLife.World.Streaming"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

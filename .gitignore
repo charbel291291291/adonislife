@@ -1,0 +1,16 @@
+Adonis Life/[Ll]ibrary/
+Adonis Life/[Tt]emp/
+Adonis Life/[Oo]bj/
+Adonis Life/[Ll]ogs/
+Adonis Life/UserSettings/
+Adonis Life/MemoryCaptures/
+Adonis Life/Recordings/
+Adonis Life/[Bb]uild/
+Adonis Life/[Bb]uilds/
+Adonis Life/.vs/
+Adonis Life/*.csproj
+Adonis Life/*.sln
+Adonis Life/*.user
+Adonis Life/debug.log
+Game/
+create-project.log
