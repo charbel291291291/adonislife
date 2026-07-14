@@ -2,7 +2,8 @@
     "name": "AdonisLife.Gameplay",
     "rootNamespace": "AdonisLife.Gameplay",
     "references": [
-        "AdonisLife.World"
+        "AdonisLife.World",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

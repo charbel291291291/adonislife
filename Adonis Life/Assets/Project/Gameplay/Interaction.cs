@@ -43,17 +43,23 @@ namespace AdonisLife.Gameplay
     public class Interactor : MonoBehaviour
     {
         [SerializeField] private float _range = 3f;
-        [SerializeField] private KeyCode _interactKey = KeyCode.E;
+        [SerializeField] private UnityEngine.InputSystem.Key _interactKey = UnityEngine.InputSystem.Key.E;
 
         public IInteractable Current { get; private set; }
 
         private void Update()
         {
             Current = FindNearest();
-            if (Current != null && Input.GetKeyDown(_interactKey))
+            if (Current != null && WasInteractPressed())
             {
                 Current.Interact(gameObject);
             }
+        }
+
+        private bool WasInteractPressed()
+        {
+            UnityEngine.InputSystem.Keyboard keyboard = UnityEngine.InputSystem.Keyboard.current;
+            return keyboard != null && keyboard[_interactKey].wasPressedThisFrame;
         }
 
         private IInteractable FindNearest()

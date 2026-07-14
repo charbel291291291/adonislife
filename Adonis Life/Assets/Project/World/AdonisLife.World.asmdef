@@ -3,7 +3,8 @@
     "rootNamespace": "AdonisLife.World",
     "references": [
         "Unity.Burst",
-        "Unity.Collections"
+        "Unity.Collections",
+        "Unity.InputSystem"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

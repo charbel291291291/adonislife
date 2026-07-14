@@ -10,7 +10,7 @@ namespace AdonisLife.World.Tools
     public class PerformanceOverlay : MonoBehaviour
     {
         [SerializeField] private bool _visible = true;
-        [SerializeField] private KeyCode _toggleKey = KeyCode.F3;
+        [SerializeField] private UnityEngine.InputSystem.Key _toggleKey = UnityEngine.InputSystem.Key.F3;
 
         private const float Smoothing = 0.1f;
         private float _smoothedDeltaTime;
@@ -24,7 +24,8 @@ namespace AdonisLife.World.Tools
                 Time.unscaledDeltaTime,
                 Smoothing);
 
-            if (Input.GetKeyDown(_toggleKey))
+            UnityEngine.InputSystem.Keyboard keyboard = UnityEngine.InputSystem.Keyboard.current;
+            if (keyboard != null && keyboard[_toggleKey].wasPressedThisFrame)
             {
                 _visible = !_visible;
             }

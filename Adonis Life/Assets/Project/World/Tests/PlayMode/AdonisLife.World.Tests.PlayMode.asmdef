@@ -4,7 +4,8 @@
     "references": [
         "UnityEngine.TestRunner",
         "AdonisLife.World",
-        "AdonisLife.World.Streaming"
+        "AdonisLife.World.Streaming",
+        "AdonisLife.Gameplay"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

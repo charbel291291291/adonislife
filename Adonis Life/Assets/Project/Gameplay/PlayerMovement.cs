@@ -53,8 +53,16 @@ namespace AdonisLife.Gameplay
 
         private CharacterController _characterController;
         private float _verticalVelocity;
+        private IPlayerInputSource _inputSource;
 
         public float WalkSpeed => _walkSpeed;
+
+        /// <summary>Input source; defaults to the keyboard, injectable for tests.</summary>
+        public IPlayerInputSource InputSource
+        {
+            get => _inputSource ?? (_inputSource = new KeyboardInputSource());
+            set => _inputSource = value;
+        }
 
         private void Awake()
         {
@@ -63,8 +71,8 @@ namespace AdonisLife.Gameplay
 
         private void Update()
         {
-            var input = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-            bool sprinting = Input.GetKey(KeyCode.LeftShift);
+            Vector2 input = InputSource.MoveInput;
+            bool sprinting = InputSource.Sprint;
 
             // Forward input moves along the player's facing; horizontal input turns.
             transform.Rotate(0f, input.x * _turnSpeedDegrees * Time.deltaTime, 0f);
