@@ -15,3 +15,6 @@ Adonis Life/debug.log
 Game/
 create-project.log
 *.log
+
+# Batch-mode test artifacts at repository root
+/*.xml
